@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #1a1a1a;
+      color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1000px;
+      width: 90%;
+      background: #2b2b2b;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .back-btn {
+      display: inline-block;
+      background: #ff5a5f;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      margin-top: 2rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .back-btn:hover {
+      background: #e14b4f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Gallery</h1>
+    <div class="gallery">
+      <img src="gallery/image1.png" alt="Screenshot 1" />
+      <img src="gallery/image2.png" alt="Screenshot 2" />
+      <img src="gallery/image3.png" alt="Screenshot 3" />
+      <!-- Add more images here -->
+    </div>
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
+</body>
+</html>
